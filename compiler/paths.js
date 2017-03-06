@@ -1,4 +1,4 @@
-const path = require('path')
+import path from 'path'
 
 const base = process.cwd()
 
@@ -9,4 +9,4 @@ const PATHS = {
   root: base
 }
 
-module.exports = PATHS
+export default PATHS

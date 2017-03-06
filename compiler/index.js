@@ -1,8 +1,8 @@
-const PATHS = require('./paths')
+import PATHS from './paths'
 
 // Plugins
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import CleanWebpackPlugin from 'clean-webpack-plugin'
 
 const common = {
   entry: {
@@ -32,4 +32,4 @@ const common = {
   }
 }
 
-module.exports = common
+export default common
