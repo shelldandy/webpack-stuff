@@ -20,6 +20,8 @@
     "babel-loader": "^6.3.2",
     "babel-preset-env": "^1.2.0",
     "babel-preset-react": "^6.23.0",
-    "clean-webpack-plugin": "^0.1.15"
+    "clean-webpack-plugin": "^0.1.15",
+    "webpack-dev-server": "^2.4.1",
+    "webpack-merge": "^3.0.0"
   }
 }
