@@ -7,7 +7,7 @@
   "author": "Miguel Palau <mpalauzarza@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack"
+    "build": "webpack --env production"
   },
   "dependencies": {
     "html-webpack-plugin": "^2.28.0",
