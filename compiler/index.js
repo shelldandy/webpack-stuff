@@ -19,7 +19,17 @@ const common = {
     new CleanWebpackPlugin([ PATHS.build ], {
       root: PATHS.root
     })
-  ]
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        include: PATHS.app,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      }
+    ]
+  }
 }
 
 module.exports = common
