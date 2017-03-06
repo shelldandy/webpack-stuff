@@ -14,7 +14,7 @@ const common = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'React Test'
+      template: PATHS.template
     }),
     new CleanWebpackPlugin([ PATHS.build ], {
       root: PATHS.root

@@ -1,12 +1,8 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
-class Hello extends Component {
-  render () {
-    return (
-      <h1>Hello Webpack from React</h1>
-    )
-  }
-}
+const Hello = () => (
+  <h1>Hello Webpack World!!</h1>
+)
 
-ReactDOM.render(<Hello />, document.body)
+ReactDOM.render(<Hello />, document.getElementById('app'))
