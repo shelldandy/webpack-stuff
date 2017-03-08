@@ -7,7 +7,7 @@
   "author": "Miguel Palau <mpalauzarza@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "babel-node node_modules/.bin/webpack --env production"
+    "build": "babel-node compiler --env production"
   },
   "dependencies": {
     "html-webpack-plugin": "^2.28.0",

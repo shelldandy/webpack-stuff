@@ -1,35 +1,8 @@
-import PATHS from './paths'
+import webpack from 'webpack'
+import commonConfig from './webpack.common'
 
-// Plugins
-import HtmlWebpackPlugin from 'html-webpack-plugin'
-import CleanWebpackPlugin from 'clean-webpack-plugin'
-
-const common = {
-  entry: {
-    app: PATHS.app
-  },
-  output: {
-    path: PATHS.build,
-    filename: '[name].js'
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: PATHS.template
-    }),
-    new CleanWebpackPlugin([ PATHS.build ], {
-      root: PATHS.root
-    })
-  ],
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        include: PATHS.app,
-        exclude: /node_modules/,
-        loader: 'babel-loader'
-      }
-    ]
-  }
-}
-
-export default common
+const compiler = webpack(commonConfig)
+compiler.run((err, stats) => {
+  if (err) console.log(err)
+  console.log(stats)
+})
